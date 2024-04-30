@@ -32,7 +32,7 @@ def combinationSum2(candidates: list[int], target: int) -> list[list[int]]:
                 if prev == candidates[jdx]:
                     continue
                 curr_arr.append(candidates[jdx])
-                _backtrack(idx + 1, curr_arr, tar-candidates[jdx])
+                _backtrack(jdx + 1, curr_arr, tar-candidates[jdx])
                 curr_arr.pop()
                 prev = candidates[jdx]
 
