@@ -27,6 +27,7 @@ def maxProfit(prices: list[int]) -> int:
         if ownStock:  # ? HAVE A STOCK
             # * CAN TO SELL or DO NOTHING
             #   ! day +2 as ther's a cooldown period and can't buy next day.
+            #   ! and no restriction on transaction thus k is not used
             profit = max(_getMaxProfit(day + 2, False) + prices[day],
                          _getMaxProfit(day + 1, ownStock))
         else:  # ? DON'T HAVE A STOCK
