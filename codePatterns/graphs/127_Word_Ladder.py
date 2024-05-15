@@ -2,8 +2,8 @@
 * TYPE             : Graph
 * ALGORITHM        : BFS
 
-* TIME-COMPLEXITY  : O(N)
-* SPACE-COMPLEXITY : O(N)
+* TIME-COMPLEXITY  : O(N * len(beginWrod))
+* SPACE-COMPLEXITY : O(N * len(beginWrod))
 
 
 * Example 1:
