@@ -1,5 +1,6 @@
 """
-DataStructure = 
+DataStructure = https://github.com/Omkar02/FAANG_2_0/blob/master/codePatterns/linked_list/DataStructure.py
+
 * Example 1:
     Input: head = [1,2,3,4,5]
     Output: [5,4,3,2,1]
