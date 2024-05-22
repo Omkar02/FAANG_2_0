@@ -37,8 +37,10 @@ class LinkedList:
                 return cur_node
             cur_node = cur_node.next
 
-    def display(self) -> None:
+    def display(self, prefix=None) -> None:
         cur_node = self.head
+        if prefix:
+            print(prefix, end=" ")
         while cur_node:
             print(cur_node.val, end=" -> ")
             cur_node = cur_node.next
