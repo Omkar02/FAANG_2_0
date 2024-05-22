@@ -1,6 +1,6 @@
 """
 * TYPE             : Graph
-* ALGORITHM        : Minimum Spanning Tree problems
+* ALGORITHM        : Kruskal's Minimum Spanning Tree problems
 
 
 * Example 1:

@@ -32,15 +32,19 @@ class UnionFind:
 
 
 def minimumCost(n: int, connections: list[list[int]]) -> int:
-    if len(connections) != n:
-        return -1
     UF = UnionFind()
     total_cost = 0
     connections.sort(key=lambda x: x[2])
     for src, dst, cost in connections:
-        UF.union(src, dst)
-        total_cost += cost
-    return cost
+        if UF.find(src) != UF.find(dst):
+            UF.union(src, dst)
+            total_cost += cost
+    # * CHECK IF ALL VERTEX ARE CONNECTED AND ARE PART OF ONE SINGLE GRAPH
+    root = UF.find(1)
+    for city in range(2, n + 1):
+        if UF.find(city) != root:
+            return -1
+    return total_cost
 
 
 print(minimumCost(n=3, connections=[[1, 2, 5], [1, 3, 6], [2, 3, 1]]))
