@@ -12,7 +12,7 @@
 from DataStructure import readyTree, BST, bNode
 
 
-def inorderTraversal(root: bNode) -> list[int]:
+def postOrderTraversal(root: bNode) -> list[int]:
     res = []
 
     def _traverse(node: bNode) -> None:
@@ -27,4 +27,4 @@ def inorderTraversal(root: bNode) -> list[int]:
 
 
 tree: BST = readyTree.printTree()
-print(inorderTraversal(readyTree.getHead()))
+print(postOrderTraversal(readyTree.getHead()))

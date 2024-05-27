@@ -12,13 +12,12 @@
 from DataStructure import readyTree, BST, bNode
 
 
-def inorderTraversal(root: bNode) -> list[int]:
+def preorderTraversal(root: bNode) -> list[int]:
     res = []
 
     def _traverse(node: bNode) -> None:
         if not node:
             return
-
         res.append(node.val)
         _traverse(node.left)
         _traverse(node.right)
@@ -27,4 +26,4 @@ def inorderTraversal(root: bNode) -> list[int]:
 
 
 tree: BST = readyTree.printTree()
-print(inorderTraversal(readyTree.getHead()))
+print(preorderTraversal(readyTree.getHead()))
