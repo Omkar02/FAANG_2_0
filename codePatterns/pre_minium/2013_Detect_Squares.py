@@ -1,4 +1,9 @@
 """
+    * Time Complexity   : O(N)
+    * Space Complexity  : O(N)
+    * Date              : 3, June 2024
+"""
+"""
 * Example 1:
     Input
         ["DetectSquares", "add", "add", "add", "count", "count", "add", "count"]
@@ -30,12 +35,14 @@ class DetectSquares:
         self.points = {}
 
     def add(self, point: list[int]) -> None:
+        # * TIME COMPLEXITY: O(1)
         point = tuple(point)
         if point not in self.points:
             self.points[point] = 0
         self.points[point] += 1
 
     def count(self, point: list[int]) -> int:
+        # * TIME COMPLEXITY: O(N)
         square_count = 0
         x_one, y_one = point
 
