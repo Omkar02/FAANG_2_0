@@ -1,6 +1,7 @@
+
 """
-    * Time Complexity   : O(V+E)
-    * Space Complexity  : O(V)
+    * Time Complexity   : 
+    * Space Complexity  : 
     * Date              : 8, June 2024
 """
 
@@ -12,6 +13,8 @@
     Input: req_skills = ["algorithms","math","java","reactjs","csharp","aws"], people = [["algorithms","math","java"],["algorithms","math","reactjs"],["java","csharp","aws"],["reactjs","csharp"],["csharp","math"],["aws","java"]]
     Output: [1,2]
 """
+
+# ! NOT SOLVED CORRECTLY
 
 
 def smallestSufficientTeam(self, req_skills: list[str], people: list[list[str]]) -> list[int]:
